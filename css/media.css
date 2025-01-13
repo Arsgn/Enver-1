@@ -216,4 +216,10 @@
   .contact h2 {
     max-width: 320px;
   }
+  #portfolio {
+    padding-block: 20px;
+  }
+  #servise {
+    padding-block: 30px;
+  }
 }
