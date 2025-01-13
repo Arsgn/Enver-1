@@ -24,15 +24,15 @@ body {
 }
 
 h1 {
-  font-size: clamp(2.625rem, 1.761rem + 4.32vw, 5rem);
-}
-
-h2 {
   font-size: clamp(2.25rem, 1.705rem + 2.73vw, 3.75rem);
 }
 
+h2 {
+  font-size: clamp(1.5rem, 1.023rem + 2.39vw, 2.813rem);
+}
+
 h3 {
-  font-size: clamp(1.438rem, 1.324rem + 0.57vw, 1.75rem);
+  font-size: clamp(1.25rem, 1.114rem + 0.68vw, 1.625rem);
 }
 
 p {
@@ -64,7 +64,7 @@ button:hover {
 }
 
 #header {
-  padding-block: 20px;
+  padding-block: 15px;
   top: 0;
   position: sticky;
   backdrop-filter: blur(10px);
@@ -105,6 +105,9 @@ button:hover {
 #home {
   padding-block: 40px;
 }
+.menu-burger {
+  display: none;
+}
 
 .home {
   display: flex;
@@ -112,8 +115,8 @@ button:hover {
   justify-content: space-between;
 }
 
-.home-main {
-  max-width: 655px;
+.home-main img {
+  max-width: 550px;
   width: 100%;
 }
 
@@ -129,7 +132,7 @@ button:hover {
 }
 
 #servise {
-  padding-block: 50px;
+  padding-block: 60px;
 }
 
 .servise {
@@ -180,23 +183,29 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   padding-block: 70px;
-}
-.port-box_1 {
-  margin-bottom: 100px;
-}
-.port-box_3 {
-  margin-top: 100px;
+  height: 600px;
 }
 
 .port-box,
-.port-box_1,
-.port-box_3 {
+.port-box1,
+.port-box2 {
   background: #1e1e20;
   padding: 15px;
   border-radius: 15px;
 }
+.port-box {
+  align-self: flex-start;
+}
+.port-box1 {
+  align-self: center;
+}
+.port-box2 {
+  align-self: flex-end;
+}
 
-.port-box:hover {
+.port-box:hover,
+.port-box1:hover,
+.port-box2:hover {
   transform: scale(1.1);
   transition: 0.2s;
   cursor: pointer;
